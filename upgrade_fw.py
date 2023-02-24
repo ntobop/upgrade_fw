@@ -88,6 +88,8 @@ def main():
     # racadm command
     # get ver
 
+def test_main():
+    assert main() == 0
 
 if __name__ == "__main__":
     main()

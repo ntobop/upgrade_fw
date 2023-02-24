@@ -1,0 +1,48 @@
+---
+vars:
+  tftp_root: ./tftp_root
+  port: 8069
+  nic: enp5s0
+  src_dir: ./tmp
+
+hosts:
+  - name: tftp_client
+    ip_address: 127.0.0.1
+    remote_user: nori
+    password: sdfasd
+    pub_key: /home/nori/.ssh/id_rsa.pub
+    src_bin: FW-BIN.EXE
+    tasks: [
+      "racadm getversion -f lc"
+    ]
+
+  - name: local_host
+    ip_address: 127.0.0.1
+    remote_user: nori
+    password: pass
+    pub_key: /home/nori/.ssh/id_rsa.pub
+    tasks: [
+      "uname -a",
+      "echo hello"
+    ]
+
+  - name: local_host2
+    ip_address: 127.0.0.1
+    remote_user: nori
+    password: pass
+    pub_key: /home/nori/.ssh/id_rsa.pub
+    tasks: [
+      "date"
+    ]
+
+comment: >
+# racadm -r <iDRAC IP address> -u <username> -p <password> \
+# fwupdate -g -u -a <path>
+# https://dl.dell.com/topicspdf/idrac7-8-lifecycle-controller-v2.30.30.30_\
+# users-guide_en-us.pdf
+# P.74
+# original
+#    fw=${fw#$NFS_PATH/}
+#    cmd="racadm update -f '$fw' -l $NFS_IP:'$NFS_PATH'"
+
+...

@@ -1,0 +1,37 @@
+default:
+  #image: alpine
+  image: opensuse/tumbleweed
+stages:
+  - build
+  - test
+  - package
+  - deploy
+
+test-job:
+  stage: test
+  script:
+    - zypper install -y python3-pip
+    - pip install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate  
+    - pip install flake8 yamllint
+    - flake8 upgrade_fw.py
+    - yamllint config.yml
+
+
+package-job:
+  stage: package
+  script:
+    - zypper install -y rpm-build mkisofs createrepo
+    - ln -sf python3 /usr/bin/python    
+    - pip install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate      
+    - python setup.py bdist_rpm
+
+  artifacts:
+    paths:
+      - dist/*
+#    expire_in: 5 days
+    when: always
+

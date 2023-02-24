@@ -1,0 +1,25 @@
+{
+  "name": "upgrade_fw",
+  "maintainer": "ntobo <ntobo@test.com>",
+  "description": "Upgrade Firmware",
+  "changelog-cmd": "git log --pretty='format:%cd %h %s %d [%an]' --date=iso --merges",
+  "homepage": "https://github.com/ntobo/upgrade_fw",
+  "files": [
+    {
+      "from": "dist/upgrade_fw-*.whl",
+      "to": "/tmp",
+      "base": "build/",
+      "fperm": "0644"
+    }
+  ],
+  "postinst-file": "debian/postinst",
+  "prerm-file": "debian/prerm",
+  "copyrights": [
+    {
+      "files": "*",
+      "copyright": "Copyright (c) 2023, hogehoge, Inc. All rights reserved.",
+      "license": "",
+      "file": ""
+    }
+  ]
+}

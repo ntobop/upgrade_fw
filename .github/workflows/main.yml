@@ -30,3 +30,22 @@ jobs:
       - name: Test with pytest
         run: |
           pytest upgrade_fw.py
+
+  package:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          sudo apt install python3-setuptools python-stdeb dh-python python3-all
+          python3 setup.py sdist
+          py2dsc --with-python3=true dist/upgrade-fw-1.0.0.tar.gz
+          cd deb_dist/upgrade-fw-1.0.0
+          dpkg-buildpackage -rfakeroot -uc -us
+

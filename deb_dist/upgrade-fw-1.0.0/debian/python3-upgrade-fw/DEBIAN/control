@@ -1,0 +1,10 @@
+Package: python3-upgrade-fw
+Source: upgrade-fw
+Version: 1.0.0-1
+Architecture: all
+Maintainer: unknown <unknown@unknown>
+Installed-Size: 18
+Depends: python3:any
+Section: python
+Priority: optional
+Description: UNKNOWN

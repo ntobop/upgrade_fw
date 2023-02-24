@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 24 Feb 2023 15:41:02 +0900
+Source: upgrade-fw
+Binary: python3-upgrade-fw
+Architecture: source all
+Version: 1.0.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: unknown <unknown@unknown>
+Changed-By: unknown <unknown@unknown>
+Description:
+ python3-upgrade-fw - UNKNOWN
+Changes:
+ upgrade-fw (1.0.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.8.5
+Checksums-Sha1:
+ e616f5b97c28515fdd56a5e8ed97e643eb63e222 841 upgrade-fw_1.0.0-1.dsc
+ e942cdf4144c2e534f68485362d04b145dc9a815 1596 upgrade-fw_1.0.0.orig.tar.gz
+ 6d66baf8d94ed16217b1250d720a59a8af11ce5d 824 upgrade-fw_1.0.0-1.debian.tar.xz
+ 90f9cfe274452d018809288a911d157dc86ebf96 1888 python3-upgrade-fw_1.0.0-1_all.deb
+ 84bbe91b9a0b4bd8b6f149d364301961adcaf452 6470 upgrade-fw_1.0.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 31ad0860bff93f44cd5ba51b3efbbebf702c0d7169647cd75c1f27371596dd95 841 upgrade-fw_1.0.0-1.dsc
+ 5d9a95cb63c3fea437f83e388a576a3f15ba3e5954c985d33d65a78795aa3199 1596 upgrade-fw_1.0.0.orig.tar.gz
+ d460b0b79947ea6e19a0795525b6230b92896d7faf704b53d0e92ccb7a97481a 824 upgrade-fw_1.0.0-1.debian.tar.xz
+ 0f78dcfc29f763aa0c1d569f547e9a25d9106fc9bdc66bb740ac1bb80f33b59a 1888 python3-upgrade-fw_1.0.0-1_all.deb
+ 68043e0449866ef2540c05244e302cc4d1f919271900ff4ba64c0abf7adc25fc 6470 upgrade-fw_1.0.0-1_amd64.buildinfo
+Files:
+ 59ca3e3ecf84f8aa920c70e843d6a590 841 python optional upgrade-fw_1.0.0-1.dsc
+ ed80de5d12f8e437e019534561293569 1596 python optional upgrade-fw_1.0.0.orig.tar.gz
+ ea5e43615cc978f8bb2330cd8e728efb 824 python optional upgrade-fw_1.0.0-1.debian.tar.xz
+ 8f4c70d6740c988859d94fd2458d3738 1888 python optional python3-upgrade-fw_1.0.0-1_all.deb
+ 2f43f8760b17e91ee87f87ff80c97480 6470 python optional upgrade-fw_1.0.0-1_amd64.buildinfo

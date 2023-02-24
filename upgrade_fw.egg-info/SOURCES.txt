@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+upgrade_fw.egg-info/PKG-INFO
+upgrade_fw.egg-info/SOURCES.txt
+upgrade_fw.egg-info/dependency_links.txt
+upgrade_fw.egg-info/entry_points.txt
+upgrade_fw.egg-info/requires.txt
+upgrade_fw.egg-info/top_level.txt

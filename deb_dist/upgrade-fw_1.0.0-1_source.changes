@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 24 Feb 2023 15:41:02 +0900
+Source: upgrade-fw
+Architecture: source
+Version: 1.0.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: unknown <unknown@unknown>
+Changed-By: unknown <unknown@unknown>
+Changes:
+ upgrade-fw (1.0.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.8.5
+Checksums-Sha1:
+ a5de0a3ab0524e00914c135bdb9b0cc08c572b52 841 upgrade-fw_1.0.0-1.dsc
+ e942cdf4144c2e534f68485362d04b145dc9a815 1596 upgrade-fw_1.0.0.orig.tar.gz
+ e4e88cc98b22b4ef15914015c89b0432ea025016 824 upgrade-fw_1.0.0-1.debian.tar.xz
+ 8c52c9fddfc5ef389d84a33576265af6e2290f49 6204 upgrade-fw_1.0.0-1_source.buildinfo
+Checksums-Sha256:
+ acba6b5f4595960fbc059bf9cdef3807751587f600535ec0c4717da3624687f7 841 upgrade-fw_1.0.0-1.dsc
+ 5d9a95cb63c3fea437f83e388a576a3f15ba3e5954c985d33d65a78795aa3199 1596 upgrade-fw_1.0.0.orig.tar.gz
+ e34dd9a897a2f20df5a5d1d1bea3a9843299ed59514f2a0828cbcdf0b5f6de4f 824 upgrade-fw_1.0.0-1.debian.tar.xz
+ 46c7e663d3bc00988b547477e9fcef4c8f7cb1165ea7b2d4269fa0b1dc9be93d 6204 upgrade-fw_1.0.0-1_source.buildinfo
+Files:
+ 317532f179f7e2017fa4d1b10eef69c3 841 python optional upgrade-fw_1.0.0-1.dsc
+ ed80de5d12f8e437e019534561293569 1596 python optional upgrade-fw_1.0.0.orig.tar.gz
+ f9c976f7485de36dbfba0efc812abc8f 824 python optional upgrade-fw_1.0.0-1.debian.tar.xz
+ 3d5f05521ef6c468300559474f75a19e 6204 python optional upgrade-fw_1.0.0-1_source.buildinfo

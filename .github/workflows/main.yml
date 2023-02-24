@@ -29,4 +29,4 @@ jobs:
           yamllint -d relaxed --no-warnings .
       - name: Test with pytest
         run: |
-          pytest
+          pytest .
